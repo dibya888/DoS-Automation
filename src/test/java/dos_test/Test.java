@@ -36,18 +36,37 @@ public class Test {
 		//New Application
 		driver.findElement(By.linkText("আবেদনসমূহ")).click();
 		Thread.sleep(1000);
+		//Select Application Type
 		driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div/div[2]/div/div[1]")).click();
 		Thread.sleep(1000);
+		//Select Certificate Type
 		driver.findElement(By.xpath("//div[2]/div[2]/div/div/div/div/div[2]")).click();
 		Thread.sleep(1000);
+		//Select 1st Class Driver
 		driver.findElement(By.xpath("//div[@id='react-select-4-option-0']")).click();
 		Thread.sleep(1000);
+		//Enter NID Number
 		WebElement nidno = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[3]/input"));
 		nidno.clear();
 		nidno.sendKeys("3434483878");
+		//Enter NID Issue Date
 		WebElement nidissue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[4]/input"));
 		nidissue.clear();
 		nidissue.sendKeys("25022021");
+		//Enter NID Expire Date
+		WebElement nidexpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[5]/input"));
+		nidexpire.clear();
+		nidexpire.sendKeys("31122999");
+		Thread.sleep(1000);
+		//Upload NID
+		WebElement fileInput = driver.findElement(By.cssSelector("input[type='file']"));
+		String filePath = "C:\\Users\\Dibya\\Downloads\\DoS Certificates\\NID Certificate.pdf";
+		fileInput.sendKeys(filePath);
+		Thread.sleep(1000);
+		//Click Upload
+		WebElement nidUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[6]/div/div/button"));
+		nidUpload.click();
+	    
 		
 		Thread.sleep(10000);
 		driver.quit();
