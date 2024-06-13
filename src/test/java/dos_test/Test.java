@@ -19,17 +19,17 @@ public class Test {
 		
 		driver.get("http://114.130.119.78/");
 		driver.manage().window().maximize();
-		Thread.sleep(1000);
+		Thread.sleep(100);
 		
 		//Login Page
 		driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[1]/div[3]/a/div/div/img")).click();
-		Thread.sleep(1000);
+		Thread.sleep(100);
 		
 		//Provide Credential
 		driver.findElement(By.id("username")).sendKeys("202403101996001");
-		Thread.sleep(1000);
+		Thread.sleep(100);
 		driver.findElement(By.id("password")).sendKeys("D987123a");
-		Thread.sleep(1000);
+		Thread.sleep(100);
 		driver.findElement(By.xpath("/html/body/section/div[2]/div/div/div/form/button")).click();
 		Thread.sleep(1000);
 		
@@ -66,9 +66,29 @@ public class Test {
 		//Click Upload
 		WebElement nidUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[6]/div/div/button"));
 		nidUpload.click();
-	    
+		//২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Number
+	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
+	    driverCertiNo.clear();
+	    driverCertiNo.sendKeys("123456789");
+	    //২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Issue Date
+	    WebElement driverCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[4]/input"));
+	    driverCertiIssue.clear();
+	    driverCertiIssue.sendKeys("01012010");
+	    //২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Expire Date
+	    WebElement driverCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/input"));
+	    driverCertiExpire.clear();
+	    driverCertiExpire.sendKeys("31122029");
+	    Thread.sleep(1000);
+	    //Upload ২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ
+	  	WebElement fileInputCer = driver.findElement(By.xpath("(//input[@type='file'])[2]"));//
+	  	String filePathCer = "C:\\Users\\Dibya\\Downloads\\DoS Certificates\\Class 2 driver's license.pdf";
+	  	fileInputCer.sendKeys(filePathCer);
+	  	Thread.sleep(1000);
+	  	//Click Upload
+	  	WebElement driverCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[6]/div/div/button"));
+	  	driverCerTiUpload.click();
 		
-		Thread.sleep(10000);
+		Thread.sleep(1000);
 		driver.quit();
 	
 
