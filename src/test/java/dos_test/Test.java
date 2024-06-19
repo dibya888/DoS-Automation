@@ -46,15 +46,15 @@ public class Test {
 		driver.findElement(By.xpath("//div[@id='react-select-4-option-0']")).click();
 		Thread.sleep(1000);
 		//Enter NID Number
-		WebElement nidno = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[3]/input"));
+		WebElement nidno = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[2]/input"));
 		nidno.clear();
 		nidno.sendKeys("3434483878");
 		//Enter NID Issue Date
-		WebElement nidissue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[4]/input"));
+		WebElement nidissue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[3]/input"));
 		nidissue.clear();
 		nidissue.sendKeys("25022021");
 		//Enter NID Expire Date
-		WebElement nidexpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[5]/input"));
+		WebElement nidexpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[4]/input"));
 		nidexpire.clear();
 		nidexpire.sendKeys("31122999");
 		Thread.sleep(1000);
@@ -64,9 +64,9 @@ public class Test {
 		fileInput.sendKeys(filePath);
 		Thread.sleep(1000);
 		//Click Upload
-		WebElement nidUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[6]/div/div/button"));
+		WebElement nidUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[5]/div/div/button"));
 		nidUpload.click();
-		//২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Number
+/*		//২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Number
 	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
 	    driverCertiNo.clear();
 	    driverCertiNo.sendKeys("123456789");
@@ -108,7 +108,7 @@ public class Test {
 	  	//Click Upload
 	  	WebElement driverPrepCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[6]/div/div/button"));
 	  	driverPrepCerTiUpload.click();
-/*	 	//Safety Course Certificate Number
+	 	//Safety Course Certificate Number
 	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
 	    driverCertiNo.clear();
 	    driverCertiNo.sendKeys("123456789");
