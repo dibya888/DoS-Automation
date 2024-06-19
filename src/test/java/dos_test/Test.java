@@ -66,16 +66,16 @@ public class Test {
 		//Click Upload
 		WebElement nidUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[1]/table/tbody/tr/td[5]/div/div/button"));
 		nidUpload.click();
-/*		//২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Number
-	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
+		//২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Number
+	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[2]/input"));
 	    driverCertiNo.clear();
 	    driverCertiNo.sendKeys("123456789");
 	    //২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Issue Date
-	    WebElement driverCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[4]/input"));
+	    WebElement driverCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
 	    driverCertiIssue.clear();
 	    driverCertiIssue.sendKeys("01012010");
 	    //২য় শ্রেনির ড্রাইভার যোগ্যতা সনদ Expire Date
-	    WebElement driverCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/input"));
+	    WebElement driverCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[4]/input"));
 	    driverCertiExpire.clear();
 	    driverCertiExpire.sendKeys("31122029");
 	    Thread.sleep(1000);
@@ -85,9 +85,9 @@ public class Test {
 	  	fileInputCer.sendKeys(filePathCer);
 	  	Thread.sleep(1000);
 	  	//Click Upload
-	  	WebElement driverCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[6]/div/div/button"));
+	  	WebElement driverCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/div/button"));
 	  	driverCerTiUpload.click();
-	  	//১ম শ্রেনির ড্রাইভার প্রস্তুতিমূলক কোর্স সনদ Number
+/*	  	//১ম শ্রেনির ড্রাইভার প্রস্তুতিমূলক কোর্স সনদ Number
 	    WebElement driverPrepCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[3]/input"));
 	    driverPrepCertiNo.clear();
 	    driverPrepCertiNo.sendKeys("7854689545");
