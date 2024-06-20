@@ -111,15 +111,15 @@ public class Test {
 	 	//Safety Course Certificate Number
 	    WebElement driverSeftyCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[2]/td[2]/input"));
 	    driverSeftyCertiNo.clear();
-	    driverCertiNo.sendKeys("123456789");
+	    driverSeftyCertiNo.sendKeys("475869362514");
 	    //Safety Course Certificate Issue Date
 	    WebElement driverSeftyCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/input"));
 	    driverSeftyCertiIssue.clear();
-	    driverSeftyCertiIssue.sendKeys("01012010");
+	    driverSeftyCertiIssue.sendKeys("05062014");
 	    //Safety Course Certificate Expire Date
 	    WebElement driverSeftyCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[2]/td[4]/input"));
 	    driverSeftyCertiExpire.clear();
-	    driverSeftyCertiExpire.sendKeys("31122029");
+	    driverSeftyCertiExpire.sendKeys("04062034");
 	    Thread.sleep(1000);
 	    //Upload Safety Course Certificate
 	  	WebElement fileInputSeftyCer = driver.findElement(By.xpath("(//input[@type='file'])[4]"));//
@@ -129,28 +129,28 @@ public class Test {
 	  	//Click Upload
 	  	WebElement driverSeftyCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[2]/td[5]/div/div/button"));
 	  	driverSeftyCerTiUpload.click();
-/*	  	//মেরিন টেকনোলজি/মেকানিক্যাল/পাওয়ার টেকনোলজিতে ডিপ্লোমা সনদ Number
-	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
-	    driverCertiNo.clear();
-	    driverCertiNo.sendKeys("123456789");
+	  	//মেরিন টেকনোলজি/মেকানিক্যাল/পাওয়ার টেকনোলজিতে ডিপ্লোমা সনদ Number
+	    WebElement driverDiplomaCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[1]/td[2]/input"));
+	    driverDiplomaCertiNo.clear();
+	    driverDiplomaCertiNo.sendKeys("987654321");
 	    //মেরিন টেকনোলজি/মেকানিক্যাল/পাওয়ার টেকনোলজিতে ডিপ্লোমা সনদ Issue Date
-	    WebElement driverCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[4]/input"));
-	    driverCertiIssue.clear();
-	    driverCertiIssue.sendKeys("01012010");
+	    WebElement driverDiplomaCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[1]/td[3]/input"));
+	    driverDiplomaCertiIssue.clear();
+	    driverDiplomaCertiIssue.sendKeys("03102015");
 	    //মেরিন টেকনোলজি/মেকানিক্যাল/পাওয়ার টেকনোলজিতে ডিপ্লোমা সনদ Expire Date
-	    WebElement driverCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/input"));
-	    driverCertiExpire.clear();
-	    driverCertiExpire.sendKeys("31122029");
+	    WebElement driverDiplomaCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[1]/td[4]/input"));
+	    driverDiplomaCertiExpire.clear();
+	    driverDiplomaCertiExpire.sendKeys("02102035");
 	    Thread.sleep(1000);
 	    //Upload মেরিন টেকনোলজি/মেকানিক্যাল/পাওয়ার টেকনোলজিতে ডিপ্লোমা সনদ
-	  	WebElement fileInputCer = driver.findElement(By.xpath("(//input[@type='file'])[2]"));//
-	  	String filePathCer = "C:\\Users\\Dibya\\Downloads\\DoS Certificates\\2nd Class Driver License.pdf";
-	  	fileInputCer.sendKeys(filePathCer);
+	  	WebElement fileInputDiplomaCer = driver.findElement(By.xpath("(//input[@type='file'])[8]"));//
+	  	String filePathDiplomaCer = "C:\\Users\\Dibya\\Downloads\\DoS Certificates\\Diploma Certificate in Marine Technology.pdf";
+	  	fileInputDiplomaCer.sendKeys(filePathDiplomaCer);
 	  	Thread.sleep(1000);
 	  	//Click Upload
-	  	WebElement driverCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[6]/div/div/button"));
-	  	driverCerTiUpload.click();
-	  	//মেরিন টেকনোলজি কোর্স সনদ Number
+	  	WebElement driverDiplomaCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[1]/td[5]/div/div/button"));
+	  	driverDiplomaCerTiUpload.click();
+/*	  	//মেরিন টেকনোলজি কোর্স সনদ Number
 	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
 	    driverCertiNo.clear();
 	    driverCertiNo.sendKeys("123456789");
