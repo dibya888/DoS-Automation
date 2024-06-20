@@ -171,27 +171,27 @@ public class Test {
 	  	//Click Upload
 	  	WebElement driverMarineCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[2]/td[5]/div/div/button"));
 	  	driverMarineCerTiUpload.click();
-/*	  	//নৌ বাহিনীর অভিজ্ঞতার রেকর্ড Number
-	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
-	    driverCertiNo.clear();
-	    driverCertiNo.sendKeys("123456789");
+	  	//নৌ বাহিনীর অভিজ্ঞতার রেকর্ড Number
+	    WebElement driverNavalCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[3]/td[2]/input"));
+	    driverNavalCertiNo.clear();
+	    driverNavalCertiNo.sendKeys("BN 869857");
 	    //নৌ বাহিনীর অভিজ্ঞতার রেকর্ড Issue Date
-	    WebElement driverCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[4]/input"));
-	    driverCertiIssue.clear();
-	    driverCertiIssue.sendKeys("01012010");
+	    WebElement driverNavalCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[3]/td[3]/input"));
+	    driverNavalCertiIssue.clear();
+	    driverCertiIssue.sendKeys("20062024");
 	    //নৌ বাহিনীর অভিজ্ঞতার রেকর্ড Expire Date
-	    WebElement driverCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/input"));
-	    driverCertiExpire.clear();
-	    driverCertiExpire.sendKeys("31122029");
+	    WebElement driverNavalCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[3]/td[4]/input"));
+	    driverNavalCertiExpire.clear();
+	    driverNavalCertiExpire.sendKeys("19062034");
 	    Thread.sleep(1000);
 	    //Upload নৌ বাহিনীর অভিজ্ঞতার রেকর্ড
-	  	WebElement fileInputCer = driver.findElement(By.xpath("(//input[@type='file'])[2]"));//
-	  	String filePathCer = "C:\\Users\\Dibya\\Downloads\\DoS Certificates\\2nd Class Driver License.pdf";
-	  	fileInputCer.sendKeys(filePathCer);
+	  	WebElement fileInputNavalCer = driver.findElement(By.xpath("(//input[@type='file'])[10]"));//
+	  	String filePathNavalCer = "C:\\Users\\Dibya\\Downloads\\DoS Certificates\\Naval experience record.pdf";
+	  	fileInputNavalCer.sendKeys(filePathNavalCer);
 	  	Thread.sleep(1000);
 	  	//Click Upload
-	  	WebElement driverCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[6]/div/div/button"));
-	  	driverCerTiUpload.click();*/
+	  	WebElement driverNavalCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[4]/table/tbody/tr[3]/td[5]/div/div/button"));
+	  	driverNavalCerTiUpload.click();
 		
 		Thread.sleep(1000);
 		driver.quit();
