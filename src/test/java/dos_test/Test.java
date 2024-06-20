@@ -87,16 +87,16 @@ public class Test {
 	  	//Click Upload
 	  	WebElement driverCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/div/button"));
 	  	driverCerTiUpload.click();
-/*	  	//১ম শ্রেনির ড্রাইভার প্রস্তুতিমূলক কোর্স সনদ Number
-	    WebElement driverPrepCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[3]/input"));
+	  	//১ম শ্রেনির ড্রাইভার প্রস্তুতিমূলক কোর্স সনদ Number
+	    WebElement driverPrepCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[2]/input"));
 	    driverPrepCertiNo.clear();
 	    driverPrepCertiNo.sendKeys("7854689545");
 	    //১ম শ্রেনির ড্রাইভার প্রস্তুতিমূলক কোর্স সনদ Issue Date
-	    WebElement driverPrepCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[4]/input"));
+	    WebElement driverPrepCertiIssue = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[3]/input"));
 	    driverPrepCertiIssue.clear();
 	    driverPrepCertiIssue.sendKeys("01062011");
 	    //১ম শ্রেনির ড্রাইভার প্রস্তুতিমূলক কোর্স সনদ Expire Date
-	    WebElement driverPrepCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[5]/input"));
+	    WebElement driverPrepCertiExpire = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[4]/input"));
 	    driverPrepCertiExpire.clear();
 	    driverPrepCertiExpire.sendKeys("31052030");
 	    Thread.sleep(1000);
@@ -106,9 +106,9 @@ public class Test {
 	  	fileInputPrepCer.sendKeys(filePathPrepCer);
 	  	Thread.sleep(1000);
 	  	//Click Upload
-	  	WebElement driverPrepCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[6]/div/div/button"));
+	  	WebElement driverPrepCerTiUpload = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[3]/table/tbody/tr[1]/td[5]/div/div/button"));
 	  	driverPrepCerTiUpload.click();
-	 	//Safety Course Certificate Number
+/*	 	//Safety Course Certificate Number
 	    WebElement driverCertiNo = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td[3]/input"));
 	    driverCertiNo.clear();
 	    driverCertiNo.sendKeys("123456789");
